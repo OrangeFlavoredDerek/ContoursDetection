@@ -107,7 +107,7 @@ while True:
     ret = True
     # video_mirror_output(img) 性能太低
     '''
-    镜像画面
+    镜像画面(性能较好)
     if ret:
         imgStack = cv2.flip(imgStack, 180)  # 视频旋转cv2.flip(frame, 1)第一个参数表示要旋转的视频，第二个参数表示旋转的方向，0表示绕x轴旋转，大于0的数表示绕y轴旋转，小于0的负数表示绕x和y轴旋转
     '''
