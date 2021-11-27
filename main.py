@@ -86,7 +86,8 @@ def getContours(img, imgContour):
 
 while True:
     success, img = cap.read()
-
+    if img is None:
+        break
     imgContours = img.copy()
     imgBlur = cv2.GaussianBlur(img, (7, 7), 1) # 高斯模糊
     imgGray = cv2.cvtColor(imgBlur, cv2.COLOR_BGR2GRAY) # 获取灰度图像
